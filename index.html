@@ -5,6 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS style -->
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
@@ -14,73 +23,98 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg fixed-top ">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Kerri</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Client</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                    </li>
-                </ul>
+    <!-- =====>  Header <===== -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand logo" href="#">
+                    <img src="images/asset 1.png" class="img-fluid" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse"
+                    aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span><i class="fa-solid fa-bars text-white"></i></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#clinet">Client</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-    </nav>
-
-    <header class="position-relative vh-100 text-white d-flex align-items-center text-center">
-
-        <div class="container">
-            <h4>welcome</h4>
-            <h1>
-                I'm
-                <span></span>
-            </h1>
-
-            <p class="lead">
-                It is a long established fact that a reader will be of a page when established fact looking at its
-                layout.
-            </p>
-
-            <button class="scroll-btn"></button>
-        </div>
-
+        </nav>
     </header>
 
+    <!-- =====>  Home <===== -->
+    <section id="home" class="vh-100 d-flex align-items-center">
+        <div class="container">
+            <div class="content text-center text-white">
+                <h4>Welcome</h4>
+                <h1>
+                    I'm
+                    <span>|</span>
+                </h1>
+                <p>
+                    It is a long established fact that a reader will be of a page when established fact looking at its
+                    layout.
+                </p>
+                <a class="btn btn-outline-light text-uppercase rounded-pill px-4 py-2">Download CV</a>
+            </div>
+        </div>
+        <div class="scroll_down">
+            <a href="#about">
+                <i></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- =====>  About <===== -->
     <section id="about"></section>
+
+    <!-- =====>  Services <===== -->
     <section id="services"></section>
+
+    <!-- =====>  hire <===== -->
     <section id="hire"></section>
+
+    <!-- =====>  client <===== -->
     <section id="client"></section>
-    <section id="client"></section>
+
+    <!-- =====>  Work <===== -->
     <section id="work"></section>
+
+    <!-- =====>  blog <===== -->
     <section id="blog"></section>
+
+    <!-- =====>  contact <===== -->
     <section id="contact"></section>
-    <footer></footer>
+
+    <!-- =====>  footer <===== -->
+    <footer>
+        <!-- =====>  copyright <===== -->
+        <div class="copyright">
+            <p>© Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
+            <p>Designed by <a href="https://routeegy.github.io/Devfolio/">route_egy</a></p>
+            <p>Coding by <strong>Khaled Radwan</strong>
+                <i class="fa-regular fa-calendar"> April 2024</i>
+            </p>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/khaldradwan96/"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/khaledradwan96"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/khaledradwan96/"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+        <a href="#home" class="back-top">
+            <i class="fa-solid fa-chevron-up"></i>
+        </a>
+    </footer>
 
 
     <script src="js/bootstrap.bundle.min.js"></script>

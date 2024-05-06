@@ -1,26 +1,357 @@
+/* =====> Variables <===== */
 :root {
+  /* fonts */
+  --font-default: "Nunito", sans-serif;
+  --font-heading: "Montserrat", sans-serif;
+
+  /* Colors */
   --main-color: #e65f78;
+  --bg-color: #f8f9fa;
 }
 
-header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(../images/asset\ 15.jpeg);
-  background-position: center;
-  background-size: cover;
+/* =====> General Style <===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--font-default);
+  background-color: var(--bg-color);
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-black);
+  font-family: var(--font-heading);
 }
 
-.scroll-btn {
-  width: 20px;
-  height: 35ps;
-  border: solid 2px #fff;
-  transform: translateY(-50px);
-}
-
-.scroll-btn::after {
-  content: "";
-  background-color: #fff;
+img {
   display: block;
-  width: 2px;
+  max-width: 100%;
+}
+
+section {
+  padding-top: 5rem;
+  position: relative;
+}
+
+/* =====> Main Compound <===== */
+/* background image class */
+.bg-image {
+}
+/* main title */
+
+/* =====> Header <===== */
+header {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+header .logo img {
+  height: 27px;
+}
+header .navbar-nav .nav-link.active,
+header .navbar-nav .nav-link.show,
+.nav-link:focus,
+.nav-link:hover {
+  --bs-navbar-active-color: #e65f78;
+  color: var(--bs-navbar-active-color);
+}
+
+/* =====> Home <===== */
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../images/asset\ 15.jpeg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center center;
+}
+#home .content h1 {
+  font-size: 54px;
+  font-weight: 500;
+}
+/* typing data */
+#home .content span::before {
+  content: "";
+  position: relative;
+  animation: typing 10s infinite;
+}
+@keyframes typing {
+  /* Kerri Deo. */
+  0% {
+    content: "";
+  }
+  2% {
+    content: "K";
+  }
+  4% {
+    content: "Ke";
+  }
+  6% {
+    content: "Ker";
+  }
+  8% {
+    content: "Kerr";
+  }
+  10% {
+    content: "Kerri";
+  }
+  12% {
+    content: "Kerri D";
+  }
+  14% {
+    content: "Kerri De";
+  }
+  16% {
+    content: "Kerri Deo.";
+  }
+  18% {
+    content: "Kerri De";
+  }
+  20% {
+    content: "Kerri D";
+  }
+  22% {
+    content: "Kerri ";
+  }
+  24% {
+    content: "Kerri";
+  }
+  26% {
+    content: "Kerr";
+  }
+  28% {
+    content: "Ker";
+  }
+  30% {
+    content: "Ke";
+  }
+  32% {
+    content: "K";
+  }
+  /* A Graphic Designer. */
+  34% {
+    content: "";
+  }
+  36% {
+    content: "A";
+  }
+  38% {
+    content: "A G";
+  }
+  40% {
+    content: "A Gra";
+  }
+  42% {
+    content: "A Graph";
+  }
+  44% {
+    content: "A Graphic";
+  }
+  46% {
+    content: "A Graphic De";
+  }
+  48% {
+    content: "A Graphic Desi";
+  }
+  50% {
+    content: "A Graphic Design";
+  }
+  52% {
+    content: "A Graphic Designer.";
+  }
+  54% {
+    content: "A Graphic Design";
+  }
+  56% {
+    content: "A Graphic Desi";
+  }
+  58% {
+    content: "A Graphic De";
+  }
+  60% {
+    content: "A Graphic";
+  }
+  62% {
+    content: "A Graph";
+  }
+  64% {
+    content: "A Gra";
+  }
+  66% {
+    content: "A G";
+  }
+  68% {
+    content: "A";
+  }
+  /* A Photographer. */
+  68% {
+    content: "";
+  }
+  70% {
+    content: "A";
+  }
+  72% {
+    content: "A P";
+  }
+  74% {
+    content: "A Pho";
+  }
+  76% {
+    content: "A Photo";
+  }
+  78% {
+    content: "A Photogra";
+  }
+  80% {
+    content: "A Photographer.";
+  }
+  82% {
+    content: "A Photographer.";
+  }
+  84% {
+    content: "A Photogra";
+  }
+  86% {
+    content: "A Photo";
+  }
+  88% {
+    content: "A Pho";
+  }
+  90% {
+    content: "A Pho";
+  }
+  92% {
+    content: "A P";
+  }
+  94% {
+    content: "A";
+  }
+  96% {
+    content: "";
+  }
+  100% {
+    content: "";
+  }
+}
+#home .content p {
+  max-width: 500px;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.75);
+  margin: auto;
+  margin-bottom: 1.5rem;
+}
+/* scroll down button */
+#home .scroll_down {
   position: absolute;
-  height: 20%;
+  bottom: 5vh;
+  text-align: center;
+  width: 100%;
+}
+#home .scroll_down i {
+  position: relative;
+  animation: bounce 2s infinite;
+  height: 44px;
+  width: 28px;
+  border-radius: 30px;
+  border: 2px solid #ffffff;
+  display: inline-block;
+}
+#home .scroll_down i:after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 11px;
+  border-radius: 2px;
+  transition: all 0.2s;
+  height: 10px;
+  width: 3px;
+  background: #fff;
+}
+@keyframes bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transform: translateZ(0);
+  }
+
+  40%,
+  43% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0);
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+/* ===== copyright ===== */
+.copyright {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #212121;
+  color: #fff;
+}
+.copyright p {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.copyright p a {
+  color: #fff;
+}
+.copyright .social {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+}
+.copyright .social li {
+  padding: 5px;
+}
+.copyright .social i {
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #28251f;
+  border-radius: 50%;
+  transition: 1s;
+}
+.copyright .social li:hover i {
+  background-color: var(--main-color);
+}
+
+/* ===== back to top btn ===== */
+.back-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--main-color);
+  /* border-radius: 50%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  text-decoration: none;
+}
+.back-top i {
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
 }
