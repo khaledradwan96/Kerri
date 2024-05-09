@@ -1,0 +1,43 @@
+(0, 0, 0, 1) -> #000000
+(0.051, 0.431, 0.992, 1) -> #0D6EFF
+(0.529, 0.808, 0.922, 1) -> #87CEEB
+(0.671, 0.671, 0.671, 1) -> #AAAAAA
+(0.902, 0.373, 0.471, 1) -> #E86078
+(0.910, 0.373, 0.471, 1) -> #E96178
+(0.949, 0.702, 0.102, 1) -> #F2B31A
+(0.973, 0.976, 0.980, 1) -> #F8F9FA
+(1, 1, 1, 1) -> #FFFFFF
+(0.129, 0.129, 0.129, 1) -> #212121
+(0.129, 0.145, 0.161, 1) -> #212529
+(0.145, 0.145, 0.145, 1) -> #252525
+(0.192, 0.694, 0.392, 1) -> #31B06A
+(0.216, 0.722, 0.875, 1) -> #37B8DE
+(0.365, 0.412, 0.965, 1) -> #5D69F6
+(0, 0, 0, 0) -> #000000 (Transparent)
+(0, 0, 0, 0.69) -> #000000 (Transparent)
+(0.945, 0.945, 0.945, 0.8) -> #F2F2F2 (Semi-transparent)
+(1, 1, 1, 0.6) -> #FFFFFF (Semi-transparent)
+(1, 1, 1, 0.75) -> #FFFFFF (Semi-transparent)
+(0.129, 0.145, 0.161, 0.75) -> #212529 (Semi-transparent)
+====================================================
+#000000 - Black
+#0D6EFF - Dodger Blue
+#87CEEB - Sky Blue
+#AAAAAA - Gray
+#E86078 - Pastel Red
+#E96178 - Pastel Red
+#F2B31A - Gold
+#F8F9FA - White Smoke
+#FFFFFF - White
+#212121 - Eerie Black
+#212529 - Raisin Black
+#252525 - Nero
+#31B06A - Jungle Green
+#37B8DE - Summer Sky
+#5D69F6 - Blue Sapphire
+#000000 - Black (Transparent)
+#000000 - Black (Transparent)
+#F2F2F2 - Whitish (Semi-transparent)
+#FFFFFF - White (Semi-transparent)
+#FFFFFF - White (Semi-transparent)
+#212529 - Raisin Black (Semi-transparent)
