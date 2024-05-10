@@ -271,7 +271,7 @@ header .scroll_down::after {
   }
 }
 
-/* =====> About me <===== */
+/* ================ About me ================ */
 #about {
   background-color: #fff;
 }
@@ -295,7 +295,8 @@ header .scroll_down::after {
   color: var(--main-color);
   border: 2px solid var(--main-color);
 }
-/* =====> Services <===== */
+
+/* ================ Services ================ */
 #services .col-lg-4 > div {
   border: 1px solid var(--bs-border-color);
 }
@@ -315,7 +316,37 @@ header .scroll_down::after {
   font-size: 44px;
 }
 
-/* ===== copyright ===== */
+/* ================ Client ================ */
+#client i {
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+#client button {
+  display: block;
+  width: 12px;
+  height: 6px;
+
+  opacity: 0.5;
+  width: 12px;
+  height: 6px;
+  border-radius: 20px;
+
+  margin: 5px 4px;
+
+  border: none;
+  border-radius: 20px;
+  transition: all 0.5s;
+
+  background-color: var(--main-color);
+}
+
+#client button.active {
+  width: 20px;
+  opacity: 1;
+}
+
+/* ================ copyright ================ */
 .copyright {
   text-align: center;
   padding: 15px 0;
