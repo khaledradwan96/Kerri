@@ -33,6 +33,9 @@ img {
   display: block;
   max-width: 100%;
 }
+a {
+  text-decoration: none;
+}
 section {
   padding: 5rem 0;
   position: relative;
@@ -376,6 +379,30 @@ header .scroll_down::after {
 }
 #work .work-card:hover .details {
   top: 50%;
+}
+
+/* ================ Blog ================ */
+#blog p a {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+/* ================ Contact ================ */
+#contact i {
+  color: var(--main-color);
+  font-size: 35px;
+}
+#contact .btn {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 1rem;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  border-color: var(--main-color);
+  box-shadow: none;
 }
 
 /* ================ copyright ================ */
