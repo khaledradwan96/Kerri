@@ -1,5 +1,7 @@
 /* ================ global styles ================ */
 :root {
+  scroll-padding-top: 56px;
+
   /* fonts */
   --font-default: "Nunito", sans-serif;
   --font-heading: "Montserrat", sans-serif;
@@ -52,6 +54,53 @@ section {
   margin: auto;
 }
 
+/* back to top btn */
+.scroll-up-btn {
+  background-color: var(--main-color);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 6px;
+  animation: shown 1s;
+  animation-timeline: view();
+  animation-range: 10% 20%;
+  animation-fill-mode: both;
+}
+@keyframes shown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* left-setting */
+.left-setting {
+  position: fixed;
+  top: 50%;
+  left: 0;
+}
+.left-setting i {
+  width: 30px;
+  height: 30px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: var(--main-color);
+  color: #fff;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
 /* ================ navbar ================ */
 .nav-link.active,
 nav .nav-link {
@@ -66,7 +115,6 @@ header {
   background-size: cover;
   background-attachment: fixed;
 }
-
 /* typing words */
 header h1 span::before {
   content: "";
@@ -231,7 +279,6 @@ header h1 span::before {
     content: "";
   }
 }
-
 /* scroll down button */
 header .scroll_down {
   width: 28px;
@@ -321,6 +368,9 @@ header .scroll_down::after {
   color: var(--main-color);
   margin-bottom: 1rem;
 }
+#client img {
+  max-width: 110px;
+}
 #client button {
   display: block;
   width: 12px;
@@ -336,6 +386,7 @@ header .scroll_down::after {
   width: 20px;
   opacity: 1;
 }
+
 /* ================ Our Works ================ */
 #work .nav-pills .nav-link {
   --bs-nav-link-color: #000;
@@ -348,7 +399,6 @@ header .scroll_down::after {
   --bs-nav-link-hover-color: #fff;
   background-color: var(--main-color);
 }
-
 #work .work-card img {
   transition: 0.5s;
 }
@@ -398,66 +448,28 @@ header .scroll_down::after {
   padding: 10px 30px;
   margin-top: 1rem;
 }
-
 #contact input:focus,
 #contact textarea:focus {
   border-color: var(--main-color);
   box-shadow: none;
 }
 
-/* ================ copyright ================ */
-.copyright {
-  text-align: center;
-  padding: 15px 0;
+/* ================ Footer ================ */
+footer {
   background-color: #212121;
-  color: #fff;
 }
-.copyright p {
-  font-size: 16px;
-  margin-bottom: 5px;
+footer p {
+  margin-bottom: 0.5rem;
 }
-.copyright p a {
-  color: #fff;
+footer p strong {
+  color: var(--main-color);
 }
-.copyright .social {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0;
+footer .fa-circle {
+  color: #313131;
 }
-.copyright .social li {
-  padding: 5px;
-}
-.copyright .social i {
-  color: #fff;
-  font-size: 18px;
-  cursor: pointer;
-  padding: 10px;
-  background-color: #28251f;
-  border-radius: 50%;
-  transition: 1s;
-}
-.copyright .social li:hover i {
-  background-color: var(--main-color);
-}
-
-/* ================ back to top btn ================ */
-.back-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: var(--main-color);
-  /* border-radius: 50%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+footer .fa-brands {
   transition: 0.3s;
-  text-decoration: none;
 }
-.back-top i {
-  font-size: 20px;
-  color: #fff;
-  transition: 0.3s;
+footer .fa-stack:hover .fa-brands {
+  color: var(--main-color);
 }
