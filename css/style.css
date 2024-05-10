@@ -291,23 +291,26 @@ header .scroll_down::after {
 }
 
 /* ================ Services ================ */
-#services .col-lg-4 > div {
-  border: 1px solid var(--bs-border-color);
-}
-
-#services .services-title-border {
+#services .services-border {
   height: 2px;
   width: 40px;
   margin: 15px auto;
   transition: all 0.5s;
   background-color: var(--main-color);
 }
-#services .col-lg-4:hover .services-title-border {
-  width: 100px;
+#services .row > div:hover .services-border {
+  width: 70px;
 }
 #services i {
   color: var(--main-color);
   font-size: 44px;
+}
+
+/* ================ Hire ================ */
+#hire .btn {
+  background-color: var(--main-color);
+  color: #fff;
+  padding: 10px 30px;
 }
 
 /* ================ Client ================ */
