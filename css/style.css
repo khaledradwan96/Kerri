@@ -107,6 +107,7 @@ nav .nav-link {
   --bs-navbar-active-color: rgba(var(--main-color-rgb), 1);
   --bs-nav-link-hover-color: rgba(var(--main-color-rgb), 1);
 }
+
 /* ================ header ================ */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
